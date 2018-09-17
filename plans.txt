@@ -1,0 +1,62 @@
+1) Start with the World
+
+2) Produce the most basic raw goods
+	- Land
+	- People?
+	- Water
+	- Food
+
+3) Start to add derived actors
+	
+
+compete over scarce resources: land + labor
+
+Chain:
+
+Automobile Factory
+- takes in metal, plastic, leather, labor
+- puts out a car
+
+Plastics Factory
+- takes in oil, land, labor
+- puts out plastic
+
+Oil Mine
+- takes in labor, land
+- puts out oil
+
+Metal Mine
+- takes in labor, land
+- puts out metal
+
+Leather Farm
+- takes in land, labor
+- puts out leather
+
+? labor
+? land
+? what holds stuff
+? how does the clock work
+? how does an entity know what it can acquire
+? where does something go when it's done
+? how to self limit - something needs to be consumable
+? consumer purchases remove goods from the market
+? maybe don't hold labor? just pay the market rate for labor?
+? entities need cash
+? when does an entity go out of business and get recycled?
+
+Goods have a size
+An entity produces a sell order, or tells the engine it wants to accept a buy order
+A portion of labor money set aside to buy cars.
+
+Each "laborer" is an independent entity that functions as a clock. It is "hired" which means it calls back to a "service" every so often to do "work"
+The framework defines a set of "costs" for different production processes. I.e. the "Produce Metal" process requires 10 labor units and 1 land unit to produce 1 metal unit.
+In one system a central algorithm allocates the laborers. In another system a series of investors allocate their capital to individual laborers and changes based on market fluctuation.
+A laborer makes a synchronous call to a "process". That process changes the goods on hand including capital?
+
+Start coding a thing. A laborer functioning as a clock. An Oil Mine accepting calls and putting oil in storage. 
+Components: Laborer. Oil Mine. Storage. Land.
+Infrastructure: Message system. No state - keep in memory. Running instances of containers.
+
+Laborers buy and eat food. If they don't have any they die.
+	- long term - they determine what goods to buy based on discretionary budget
