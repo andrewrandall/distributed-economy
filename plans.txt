@@ -60,3 +60,5 @@ Infrastructure: Message system. No state - keep in memory. Running instances of 
 
 Laborers buy and eat food. If they don't have any they die.
 	- long term - they determine what goods to buy based on discretionary budget
+
+Azure Container Instances
