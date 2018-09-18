@@ -49,6 +49,7 @@ resource "azurerm_container_group" "main" {
 		volume {
 			name = "logs"
 			mount_path = "/logs"
+			read_only = false
 			share_name = "${azurerm_storage_share.main.name}"
 			storage_account_name = "${azurerm_storage_account.main.name}"
 			storage_account_key = "${azurerm_storage_account.main.primary_access_key}"

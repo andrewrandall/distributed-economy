@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Laborer
 {
@@ -6,7 +7,9 @@ namespace Laborer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Directory.CreateDirectory("/logs");
+            File.WriteAllText("/logs/hello.log", "hello");
+            Console.WriteLine(File.ReadAllText("/logs/hello.log"));
         }
     }
 }
