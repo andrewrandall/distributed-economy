@@ -1,22 +1,19 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading;
-using System.Xml;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
-namespace Laborer
+namespace MetalMine
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            var t = new Thread(new ThreadStart(() => new Laborer().StartLabor()));
-            t.Start();
             CreateWebHostBuilder(args).Build().Run();
         }
 

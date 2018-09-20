@@ -11,4 +11,4 @@ FROM microsoft/dotnet:aspnetcore-runtime
 ARG secrets
 COPY --from=build /app/build .
 ENV secrets $secrets
-ENTRYPOINT ["dotnet", "Laborer.dll"]
+ENTRYPOINT ["dotnet", "MetalMine.dll"]

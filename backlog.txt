@@ -1,0 +1,10 @@
+* marketplace
+    - create sell order
+    - update sell order
+    - accept sell order
+
+* Metal Mine
+    - http endpoint to "produce"
+    - create sell order
+    - store goods
+    - accept sell order
